@@ -4,6 +4,7 @@ var engine = new BABYLON.Engine(canvas);
 var createScene = function () {
   var scene = new BABYLON.Scene(engine);
 
+  
   var camera = new BABYLON.FreeCamera(
     "camera1",
     new BABYLON.Vector3(0, 21, 0),
