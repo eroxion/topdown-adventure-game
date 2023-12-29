@@ -4,13 +4,13 @@ var engine = new BABYLON.Engine(canvas);
 var createScene = function () {
   var scene = new BABYLON.Scene(engine);
 
-  
-  var camera = new BABYLON.FreeCamera(
-    "camera1",
-    new BABYLON.Vector3(0, 21, 0),
-    scene
-  );
-  camera.setTarget(BABYLON.Vector3.Zero());
+  scene.createDefaultCameraOrLight(true, false, true);
+  // var camera = new BABYLON.FreeCamera(
+  //   "camera1",
+  //   new BABYLON.Vector3(0, 21, 0),
+  //   scene
+  // );
+  // camera.setTarget(BABYLON.Vector3.Zero());
 
   scene.createDefaultLight(true);
 
